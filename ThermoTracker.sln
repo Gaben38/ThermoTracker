@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29123.88
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E61B88B0-7117-4C57-B7C5-CE76B7469247}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C358D411-93AE-491F-BCEF-44E657A919D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{E98E9D75-D50F-4870-B5BF-DE782D4523AA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ThermoTracker.Service", "src\ThermoTracker.Service\ThermoTracker.Service.csproj", "{B3C08644-AA68-4171-8DC7-18F60C3A0FC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThermoTracker.Entities", "ThermoTracker.Entities\ThermoTracker.Entities.csproj", "{6C5C3E1D-219F-4D9E-80EB-370D72B069DD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B3C08644-AA68-4171-8DC7-18F60C3A0FC5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B3C08644-AA68-4171-8DC7-18F60C3A0FC5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B3C08644-AA68-4171-8DC7-18F60C3A0FC5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B3C08644-AA68-4171-8DC7-18F60C3A0FC5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C5C3E1D-219F-4D9E-80EB-370D72B069DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C5C3E1D-219F-4D9E-80EB-370D72B069DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C5C3E1D-219F-4D9E-80EB-370D72B069DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C5C3E1D-219F-4D9E-80EB-370D72B069DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B3C08644-AA68-4171-8DC7-18F60C3A0FC5} = {E61B88B0-7117-4C57-B7C5-CE76B7469247}
+		{6C5C3E1D-219F-4D9E-80EB-370D72B069DD} = {E61B88B0-7117-4C57-B7C5-CE76B7469247}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {39330090-6D91-4E27-8F66-D1ED2FEDC8E1}
+	EndGlobalSection
+EndGlobal
