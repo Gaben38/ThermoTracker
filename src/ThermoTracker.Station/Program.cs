@@ -11,8 +11,11 @@ namespace ThermoTracker.Station
             using (var display = new Tm1637Display(3, 2, PinNumberingScheme.Logical))
             {
                 display.TurnedOn = true;
-                display.Brightness = 7;
-                display.DisplayDigit(0);
+                display.Brightness = 5;
+                display.Clear();
+                display.DisplayNumber(15);
+                display.UpperDotOn = true;
+                display.LowerDotOn = true;
                 await Task.Delay(TimeSpan.FromSeconds(10));
                 await FlashScreen(display, 5);
 
@@ -25,7 +28,7 @@ namespace ThermoTracker.Station
         private static async Task FlashScreen(Tm1637Display display, int numberOfFlashes, TimeSpan? delay = null)
         {
             if (delay == null)
-                delay = TimeSpan.FromMilliseconds(100);
+                delay = TimeSpan.FromMilliseconds(500);
 
             var initiallyTurnedOn = display.TurnedOn;
             for (int i = 0; i < numberOfFlashes; i++)
